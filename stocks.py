@@ -18,4 +18,10 @@ print('Commission paid on the purchase:',(f'${purchaseCommission:,.2f}'))
 print('Amount the stock sold for',(f'${stockSoldFor:,.2f}'))
 print('Commission paid on the sale:',(f'${sellingCommission:,.2f}'))
 print('Total commission paid:',(f'${totalCommission:,.2f}'))
-print('Profit (or loss if negative):',(f'${profitOrLoss:,.2f}'))
+#determining profit, loss, or breakeven
+if profitOrLoss > 0:
+    print('Your loss is:',(f'${profitOrLoss:,.2f}'))
+if profitOrLoss < 0:
+    print('Your profit is:',(f'${profitOrLoss:,.2f}'))
+if profitOrLoss == 0:
+    print('Your return is:',(f'${profitOrLoss:,.2f}'))
