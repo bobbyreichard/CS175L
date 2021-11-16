@@ -12,11 +12,17 @@ def main():
         total = total + infile_lines
         
     file.close
-    average_numbers(total, n)
+    return average_numbers(total, n)
+    except IOError:
+        print('There was an IOError.')
+    except ValueError:
+        print('There was an ValueError')
+        
 
 def average_numbers(total, n):
     average = total/n
-    print(f'Average: {average:.1f}')
+    print(average)
 
+
+if__name__='__main':
 main()
-
