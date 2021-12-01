@@ -1,6 +1,6 @@
 #matplotlib
 
-import matplotlib
+import matplotlib.pyplot as plt
 
 #main
 def main():
